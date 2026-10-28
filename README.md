@@ -2,6 +2,18 @@
 
 A local, read-only web app that reads an Airtable base schema, lets you choose a record, and creates an editable Microsoft Word (`.docx`) form. The form includes every field from the table schema, even when the selected Airtable record has no value for that field.
 
+## Screenshots
+
+The screenshots below use sample data.
+
+### Record browser
+
+![Airtable to Word record browser](docs/screenshots/app-desktop.png)
+
+### Filtered records
+
+![Airtable to Word filtered search results](docs/screenshots/app-search.png)
+
 ## Airtable access required
 
 Create a Personal Access Token at <https://airtable.com/create/tokens> with access limited to the intended base and these scopes:
