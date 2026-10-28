@@ -1,4 +1,21 @@
+[project]
+name = "airtable-to-word"
+version = "0.1.0"
+description = "Export Airtable records as editable Word forms."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "flask>=3.1,<4",
+    "python-docx>=1.2,<2",
+    "python-dotenv>=1.1,<2",
+    "requests>=2.32,<3",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4,<9",
+]
+
 [tool.pytest.ini_options]
 pythonpath = ["."]
 testpaths = ["tests"]
-

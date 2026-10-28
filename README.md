@@ -28,16 +28,14 @@ The Base ID begins with `app`. You can find it in Airtable's API documentation f
 ## Setup
 
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
+uv sync
 cp .env.example .env
 ```
 
 Open `.env`, replace the placeholder token and Base ID, then run:
 
 ```bash
-python app.py
+uv run python app.py
 ```
 
 Open <http://127.0.0.1:5000>. Choose a table and record, then click **Download Word form**.
@@ -52,5 +50,5 @@ Open <http://127.0.0.1:5000>. Choose a table and record, then click **Download W
 ## Tests
 
 ```bash
-pytest -q
+uv run pytest -q
 ```
